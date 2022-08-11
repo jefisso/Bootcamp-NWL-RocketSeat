@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula NLW</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body onscroll="onScroll()">
+    <nav id="navigation">
+        <div class="wrapper">
+            <a class="logo" href="#home">
+                Jellys<b>Artes</b>
+            </a>
+
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Início</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+
+                <a class="buttom" href="#">duvido clicar</a>
+
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" 
+                        href="https://facebook.com/jefsolove"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                        href="https://instagram.com/jefisso"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                        href="https://jefisso.tumblr.com"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="white" d="m528.016 63.744l-.002 223.871h224.32v95.968H529.006l-.32 278.528c0 51.776 2.688 85.009 8.16 99.745c8.528 23.248 39.568 53.008 97.184 53.008c44.689 0 104.977-13.44 150.16-47.248v149.312c-37.68 17.967-72.72 25.215-103.248 32.464c-30.56 7.215-63.663 10.847-99.15 10.847c-39.537 0-153.665-1.088-200.497-120.399c-8.432-21.471-12.655-52.655-12.655-93.471V383.745H239.792l.624-98.128c42.656 0 170.624-25.905 170.624-221.872zm-.002-64.001L411.038-.259c-35.344 0-64 28.656-64 64c0 146.496-81.632 157.872-106.624 157.872c-35.216 0-63.84 28.464-64 63.68l-.624 98.128c-.096 17.024 6.624 33.376 18.624 45.471a64.057 64.057 0 0 0 45.376 18.849h64.848v298.624c0 49.376 5.6 87.632 17.088 116.88c28.847 73.44 97.376 161.009 260.064 161.009c40.288 0 78.591-4.224 113.872-12.56l7.055-1.664c29.872-7.024 68.032-15.776 109.008-35.312a63.979 63.979 0 0 0 36.464-57.777V767.63a63.985 63.985 0 0 0-35.344-57.214c-9.055-4.56-18.88-6.784-28.656-6.784a64.008 64.008 0 0 0-38.337 12.752c-38.095 28.529-86.847 34.496-111.808 34.496c-25.6 0-35.119-9.28-37.215-11.744c-1.087-5.024-4.127-23.776-4.127-77.008l.223-214.528h159.408c35.344 0 64-28.657 64-64v-95.97c0-35.344-28.656-64-64-64h-160.32V63.743c0-35.344-28.656-64-64-64z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+                <button 
+                aria-expanded="false"
+                aria-label="abrir menu"
+                onclick="openMenu()" class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </button>
+                <button
+                aria-expanded="true"
+                aria-label="fechar menu"
+                onclick="closeMenu()"
+                class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </button>
+        </div>           
+    </nav>
+    <header id="home">
+        <div class="wrapper">
+            <h4>Boas-vindas a minha segunda tentativa</h4>
+            <h1>It is always painful. The frequency is what  decreases the pain.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sit aliquam nam odio veniam commodi?</p>
+            <button>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.8337 10.6667C12.667 10.5833 11.5837 10.0833 11.417 10C11.2503 9.91668 11.0837 9.91668 10.917 10.0833C10.7503 10.25 10.417 10.75 10.2503 10.9167C10.167 11.0833 10.0003 11.0833 9.83366 11C9.25033 10.75 8.66699 10.4167 8.16699 10C7.75033 9.58334 7.33366 9.08334 7.00033 8.58334C6.91699 8.41668 7.00033 8.25001 7.08366 8.16668C7.16699 8.08334 7.25033 7.91668 7.41699 7.83334C7.50033 7.75001 7.58366 7.58334 7.58366 7.50001C7.66699 7.41668 7.66699 7.25001 7.58366 7.16668C7.50033 7.08334 7.08366 6.08334 6.91699 5.66668C6.83366 5.08334 6.66699 5.08334 6.50033 5.08334C6.41699 5.08334 6.25033 5.08334 6.08366 5.08334C5.91699 5.08334 5.66699 5.25001 5.58366 5.33334C5.08366 5.83334 4.83366 6.41668 4.83366 7.08334C4.91699 7.83334 5.16699 8.58334 5.66699 9.25001C6.58366 10.5833 7.75033 11.6667 9.16699 12.3333C9.58366 12.5 9.91699 12.6667 10.3337 12.75C10.7503 12.9167 11.167 12.9167 11.667 12.8333C12.2503 12.75 12.7503 12.3333 13.0837 11.8333C13.2503 11.5 13.2503 11.1667 13.167 10.8333C13.167 10.8333 13.0003 10.75 12.8337 10.6667ZM14.917 3.08334C11.667 -0.166656 6.41699 -0.166656 3.16699 3.08334C0.500325 5.75001 0.000325481 9.83334 1.83366 13.0833L0.666992 17.3333L5.08366 16.1667C6.33366 16.8333 7.66699 17.1667 9.00033 17.1667C13.5837 17.1667 17.2503 13.5 17.2503 8.91668C17.3337 6.75001 16.417 4.66668 14.917 3.08334ZM12.667 14.75C11.5837 15.4167 10.3337 15.8333 9.00033 15.8333C7.75033 15.8333 6.58366 15.5 5.50033 14.9167L5.25033 14.75L2.66699 15.4167L3.33366 12.9167L3.16699 12.6667C1.16699 9.33334 2.16699 5.16668 5.41699 3.08334C8.66699 1.00001 12.8337 2.08334 14.8337 5.25001C16.8337 8.50001 15.917 12.75 12.667 14.75Z" fill="white"/>
+                    </svg>
+                    You can't choose
+            </button>
+            <img src="/Assets/mina.svg" alt="Uma mina feliz, negra de cabelo afro, usando uma malha verde de gola até o pescoço, se isso te convence melhor" 
+            />
+            <div class="stats">
+                <div class="stat">
+                <h3>+3.500</h3>
+                    <p>Horas perdidas</p>
+                </div>
+                <div class="stat">
+                    <h3>+15</h3>
+                    <p>Carreiras frustradas</p>
+                </div>
+                <div class="stat">
+                    <h3>+10</h3>
+                    <p>Enviando curriculo</p>
+                </div>    
+            </div>
+    </div>
+    </header>
+    <section id="services">
+        <div class="wrapper">
+            <header><h4>serviços</h4>
+            <h2>Como podemos ser felizes com estes sintomas?</h2>
+            </header>
+            <div class="cards">
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+                    <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                    <h3>Problemas digestivos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae nisi beatae a ipsa suscipit itaque dolores, nulla provident consectetur?</p>
+                </div>
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+                    <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                    <h3>Problemas hormonais</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae nisi beatae a ipsa suscipit itaque dolores, nulla provident consectetur?</p>
+                </div>
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+                    <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                    <h3>Mal-estar mental</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae nisi beatae a ipsa suscipit itaque dolores, nulla provident consectetur?</p>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!-- ScrollReaveal Lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
